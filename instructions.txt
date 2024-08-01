@@ -1,0 +1,9 @@
+Instructions 
+
+1. open terminal and CD to wherever this folder is located on your computer.
+2. type "ls" to verify you can see "brew.sh"
+3. type the following in terminal: chmod +x brew.sh
+4. type the following in terminal: ./brew.sh
+5. depending on what you need to do, CD to either the install or update folder
+6. run the respective folder's .sh file in terminal
+7. if there are issues, check the logs folder for output and any errors.
