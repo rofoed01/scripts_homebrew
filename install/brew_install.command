@@ -51,6 +51,7 @@ fi
   	  brew install coreutils
 	  brew install findutils
 	  brew install bash
+	  brew install openssl
 
 # Homebrew installs; regular apps
   pretty_print "Installing apps via Homebrew...hold on..."
