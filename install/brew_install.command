@@ -25,11 +25,14 @@ pretty_print "Ready to be jacked in, Neo? Here we go..."
           env
 
 # Homebrew installation
-  pretty_print "Homebrew install lines..."
+  pretty_print "Homebrew installation..."
 
 if ! command -v brew &>/dev/null; then
   pretty_print "Installing Homebrew, an OSX package manager, follow the instructions..." 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"'
+	eval "$(/opt/homebrew/bin/brew shellenv)"
 
   if ! grep -qs "recommended by brew doctor" ~/.zshrc; then
     pretty_print "Put Homebrew location earlier in PATH ..."
@@ -40,11 +43,6 @@ if ! command -v brew &>/dev/null; then
 else
   pretty_print "You already have Homebrew installed...good job!"
 fi
-
-# Homebrew doctor; check whether the install is healthy
-#  pretty_print "Checking Homebrew install health..."
-#  	  brew doctor
-
 
 # Homebrew installs; quality of life
   pretty_print "Installing core Homebrew utilities...one sec..."
