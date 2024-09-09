@@ -1,4 +1,6 @@
-chmod a+x /$PWD/brewIn.sh
+#!/bin/sh
+
+chmod a+x /$PWD/brewInstall.sh
 chmod a+x /$PWD/brew_install.command
-sudo zsh
+#sudo zsh  (dont think you need elevated permissons)
 /$PWD/brew_install.command -a 2>&1 | tee -a /$PWD/logs/"brewInstall$(date +%F)@$(date +%H:%M:%S).txt"
