@@ -46,50 +46,17 @@ fi
 
 # Homebrew installs; quality of life
   pretty_print "Installing core Homebrew utilities...one sec..."
-  	  brew install coreutils
-	  brew install findutils
-	  brew install bash
-	  brew install openssl
-
+  	  brew install coreutils findutils bash openssl@3 ca-certificates
+	  
 # Homebrew installs; regular apps
   pretty_print "Installing apps via Homebrew...hold on..."
-  	  brew install google-chrome
-	  brew install wireguard-go
-	  brew install --cask brave-browser
-	  brew install --cask zoom
-	  brew install --cask visual-studio-code
-	  brew install --cask telegram
-	  brew install --cask vlc
-	  brew install --cask discord
+  	  brew install google-chrome wireguard-go --cask brave-browser --cask zoom --cask visual-studio-code --cask telegram --cask vlc --cask discord
 
 # Homebrew installs; cloud infrastructure
   pretty_print "Installing cloud tools via Homebrew...patience..."
-	  Brew install git
-	  Brew install gh
-	  Brew install python3
-	  Brew install terraform
-	  brew install terragrunt
-	  Brew install opentofu
-	  brew install docker
-	  brew install docker-compose
-	  Brew install kubernetes-cli
-	  brew install minikube
-	  brew install k9s
-	  Brew install helm
-	  Brew install awscli
-	  Brew install azure-cli
-	  brew install prometheus
-	  brew install grafana
-#	  brew install pytorch
-#	  brew install ollama
-	  brew install --cask google-cloud-sdk
-	  Brew install --cask zap
-	  brew install --cask docker
-#	  brew install --cask nessus
-	  brew install --cask anaconda
-	  brew install --cask datadog-agent
-
-
+	  Brew install git gh wget python3 terraform terragrunt opentofu ansible docker docker-compose docker-completion kubernetes-cli minikube make jq istiocli k6 k9s helm awscli azure-cli prometheus grafana nmap --cask google-cloud-sdk  --cask zap --cask docker --cask anaconda --cask datadog-agent --cask anki 
+#	  brew install pytorch ollama --cask nessus
+	 
 
 # Homebrew list
   pretty_print "Showing brew list..."
