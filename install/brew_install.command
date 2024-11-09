@@ -50,12 +50,25 @@ fi
 	  
 # Homebrew installs; regular apps
   pretty_print "Installing apps via Homebrew...hold on..."
-  	  brew install google-chrome wireguard-go --cask brave-browser --cask zoom --cask visual-studio-code --cask telegram --cask vlc --cask discord
+  	  brew install google-chrome 
+  	  brew install wireguard-go 
+	  brew install --cask brave-browser
+	  brew install --cask zoom
+	  brew install --cask visual-studio-code
+	  brew install --cask telegram
+	  brew install --cask vlc
+	  brew install --cask discord
 
 # Homebrew installs; cloud infrastructure
   pretty_print "Installing cloud tools via Homebrew...patience..."
-	  Brew install git gh wget python3 terraform terragrunt opentofu ansible docker docker-compose docker-completion kubernetes-cli minikube make jq istiocli k6 k9s helm awscli azure-cli prometheus grafana nmap --cask google-cloud-sdk  --cask zap --cask docker --cask anaconda --cask datadog-agent --cask anki 
-#	  brew install pytorch ollama --cask nessus
+	  Brew install git gh wget python3 terraform terragrunt opentofu ansible docker docker-compose docker-completion kubernetes-cli minikube make jq istioctl k6 k9s helm awscli azure-cli prometheus grafana nmap 
+	  Brew install --cask google-cloud-sdk  
+	  Brew install --cask zap 
+	  Brew install --cask anaconda 
+	  Brew install --cask datadog-agent 
+	  Brew install --cask anki 
+#	  brew install pytorch ollama libtensorflow
+#	  Brew install --cask nessus
 	 
 
 # Homebrew list
