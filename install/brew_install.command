@@ -24,6 +24,23 @@ pretty_print "Ready to be jacked in, Neo? Here we go..."
   pretty_print "Environment details:"
           env
 
+# folder creation
+  pretty_print "Creating folder structure for class..."
+          mkdir -p $HOME/documents/TheoWAF/Logs
+          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Terraform
+          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Notes
+          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Homework
+          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Classes
+          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Books
+          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Files
+          mkdir -p $HOME/documents/TheoWAF/class7/AWS/Terraform
+          mkdir -p $HOME/documents/TheoWAF/class7/AWS/Notes
+          mkdir -p $HOME/documents/TheoWAF/class7/AWS/Homework
+          mkdir -p $HOME/documents/TheoWAF/class7/AWS/Classes
+          mkdir -p $HOME/documents/TheoWAF/class7/AWS/Books
+          mkdir -p $HOME/documents/TheoWAF/class7/AWS/Files
+
+
 # Homebrew installation
   pretty_print "Homebrew installation..."
 
@@ -46,7 +63,7 @@ fi
 
 # Homebrew installs; quality of life
   pretty_print "Installing core Homebrew utilities...one sec..."
-  	  brew install coreutils findutils bash openssl@3 ca-certificates
+  	  brew install coreutils findutils bash openssl@3 ca-certificates htop tmux
 	  
 # Homebrew installs; regular apps
   pretty_print "Installing apps via Homebrew...hold on..."
@@ -60,16 +77,17 @@ fi
 	  brew install --cask discord
 
 # Homebrew installs; cloud infrastructure
-  pretty_print "Installing cloud tools via Homebrew...patience..."
-	  Brew install git gh wget python3 terraform terragrunt opentofu ansible docker docker-compose docker-completion kubernetes-cli minikube make jq istioctl k6 k9s helm awscli azure-cli prometheus grafana nmap 
+  pretty_print "Installing programming & cloud tools via Homebrew...patience..."
+	    Brew install git gh wget python3 go rust terraform terragrunt opentofu vsh ansible docker docker-compose docker-completion kubernetes-cli kustomize minikube make jq istioctl k6 k9s helm awscli azure-cli prometheus grafana nmap trivy
 	  Brew install --cask google-cloud-sdk  
 	  Brew install --cask zap 
-	  Brew install --cask anaconda 
+    brew install --cask sentinel
 	  Brew install --cask datadog-agent 
 	  Brew install --cask anki 
+    brew install --cask little-snitch
 #	  brew install pytorch ollama libtensorflow
 #	  Brew install --cask nessus
-	 
+#	  Brew install --cask anaconda 	 
 
 # Homebrew list
   pretty_print "Showing brew list..."

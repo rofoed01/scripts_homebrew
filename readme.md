@@ -1,6 +1,6 @@
 Install Instructions 
 
-1. Click on the magnifing glass in the top right hand corner.
+1. Click on the magnifying glass in the top right hand corner.
 2. Type in "terminal", and open the Terminal application.
 3. Open Finder and select the "scripts_brew" folder, wherever it is located.
 4. Right click on the folder and select the "Open Terminal at folder" option at the bottom. 
@@ -13,17 +13,18 @@ Install Instructions
 10. Exercise patience and let the installs finish; this may take 30-45 minutes and upwards of 30 GB of disk space. 
   Zoom and other programs WILL RESTART during the install, so if on a Zoom call, do not panic, just rejoin once Zoom is listed as finished.
 11. Anaconda (far down on the list) will take at minimum 20 minutes to install based on connection speed.
-12. Refer back to the Class 6 install document (https://docs.google.com/document/d/1ERPPJxKwzxhQ0RXWoZDj1-1FylsTvPjPqae6UTqDhZI/edit?usp=sharing) when the installs are finished (aka when Terminal says "All set!").
+12. Refer back to the Class 6.5 install document (https://docs.google.com/document/d/1NigriGLA6Es6dsI6TtJAhkvHOeLkUponNqm2YaaiaHw/edit?usp=sharing) when the installs are finished (aka when Terminal says "All set!").
 
 
 If you want a quick and dirty way to run the scripts, do the following:
 
-1. Click on the magnifing glass in the top right hand corner.
+1. Click on the magnifying glass in the top right hand corner.
 2. Type in "terminal", and open the Terminal application.
 3. Open Finder and open the folder where the "scripts_brew" folder is located.
 4. Go to the install, fix, or update folder, depending on whether you need to install, fix, or update Homebrew.
 5. Click and drag the appropriate file ending in ".command" into Terminal.
 6. Press Enter, and the script will start running.
+
 
 Troubleshooting
 

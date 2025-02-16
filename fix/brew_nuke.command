@@ -22,6 +22,10 @@ pretty_print "You activated the nuclear warhead; let's tear down Homebrew..."
   pretty_print "Environment details:"
           env
 
+# folder structure
+  pretty_print "Creating a record of destruction..."
+          mkdir -p $HOME/documents/TheoWAF/Logs
+
 # Homebrew list
   pretty_print "Showing brew list..."
   	  brew list
