@@ -27,12 +27,12 @@ pretty_print "Ready to be jacked in, Neo? Here we go..."
 # folder creation
   pretty_print "Creating folder structure for class..."
           mkdir -p $HOME/documents/TheoWAF/Logs
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Terraform
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Notes
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Homework
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Classes
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Books
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Files
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Terraform
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Notes
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Homework
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Classes
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Books
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Files
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Terraform
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Notes
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Homework
@@ -63,29 +63,30 @@ fi
 
 # Homebrew installs; quality of life
   pretty_print "Installing core Homebrew utilities...one sec..."
-  	  brew install coreutils findutils bash openssl@3 ca-certificates htop tmux
+  	  brew install coreutils findutils bash openssl@3 ca-certificates htop tmux tree
 	  
 # Homebrew installs; regular apps
   pretty_print "Installing apps via Homebrew...hold on..."
-  	  brew install google-chrome 
-  	  brew install wireguard-go 
+  	  brew install google-chrome wireguard-go  
 	  brew install --cask brave-browser
 	  brew install --cask zoom
 	  brew install --cask visual-studio-code
 	  brew install --cask telegram
 	  brew install --cask vlc
-	  brew install --cask discord
+    brew install --cask obsidian
+#	  brew install --cask discord
 
 # Homebrew installs; cloud infrastructure
   pretty_print "Installing programming & cloud tools via Homebrew...patience..."
-	    Brew install git gh wget python3 go rust terraform terragrunt opentofu vsh ansible docker docker-compose docker-completion kubernetes-cli kustomize minikube make jq istioctl k6 k9s helm awscli azure-cli prometheus grafana nmap trivy
+	    Brew install git gh wget python3 go rust terraform terragrunt opentofu vsh ansible docker docker-compose docker-completion kubernetes-cli kustomize make jq istioctl k9s helm kubectx awscli azure-cli prometheus grafana nmap trivy atmos
 	  Brew install --cask google-cloud-sdk  
 	  Brew install --cask zap 
-    brew install --cask sentinel
-	  Brew install --cask datadog-agent 
+    brew install --cask sentinel 
 	  Brew install --cask anki 
     brew install --cask little-snitch
 #	  brew install pytorch ollama libtensorflow
+#	  Brew install minikube k6
+#	  Brew install --cask datadog-agent
 #	  Brew install --cask nessus
 #	  Brew install --cask anaconda 	 
 

@@ -27,12 +27,12 @@ pretty_print "The doctor is in; let's patch Homebrew up!"
 # folder creation
   pretty_print "Ensuring folder structure for class is present..."
           mkdir -p $HOME/documents/TheoWAF/Logs
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Terraform
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Notes
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Homework
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Classes
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Books
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Files
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Terraform
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Notes
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Homework
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Classes
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Books
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Files
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Terraform
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Notes
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Homework
@@ -48,4 +48,4 @@ pretty_print "The doctor is in; let's patch Homebrew up!"
   pretty_print "Cleaning brew files..."
   	  brew cleanup
 
-  pretty_print "Listen to the doctor, and fix up Homebrew! All set!"
+  pretty_print "Listen to the doctor, follow its suggestions, and fix up Homebrew! All set!"

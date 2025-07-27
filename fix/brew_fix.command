@@ -25,12 +25,12 @@ pretty_print "Here we go..."
 # folder creation
   pretty_print "Ensuring folder structure for class is present..."
           mkdir -p $HOME/documents/TheoWAF/Logs
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Terraform
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Notes
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Homework
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Classes
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Books
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Files
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Terraform
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Notes
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Homework
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Classes
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Books
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Files
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Terraform
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Notes
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Homework
@@ -66,4 +66,4 @@ fi
   pretty_print "Testing to see if Homebrew is now working..."
   	  brew help
 
-  pretty_print "All set! If you were able to see text above this line, Homebrew is working! You should now be able to run the install file! If you still cant see the above command, try running the brewNuke.sh command!"
+  pretty_print "All set! If you were able to see text above this line, Homebrew is working! You should now be able to run the install file! If you still can't see the text above this line, try running the brewNuke.sh command!"

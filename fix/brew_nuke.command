@@ -42,5 +42,5 @@ pretty_print "You activated the nuclear warhead; let's tear down Homebrew..."
   pretty_print "Uninstalling Homebrew program..."
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 
-  pretty_print "All set! Run the brewFix.sh file if you want to reinstall Homebrew!"
+  pretty_print "All set! Run the brewFix.sh or brew_fix.command file if you want to reinstall Homebrew!"
 

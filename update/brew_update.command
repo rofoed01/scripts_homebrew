@@ -25,12 +25,12 @@ pretty_print "Launching Homebrew upgrades..."
 # folder creation
   pretty_print "Creating folder structure for class"
           mkdir -p $HOME/documents/TheoWAF/Logs
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Terraform
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Notes
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Homework
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Classes
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Books
-          mkdir -p $HOME/documents/TheoWAF/class6.5/GCP/Files
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Terraform
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Notes
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Homework
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Classes
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Books
+          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/Files
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Terraform
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Notes
           mkdir -p $HOME/documents/TheoWAF/class7/AWS/Homework
