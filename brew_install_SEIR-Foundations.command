@@ -27,8 +27,8 @@ pretty_print "Ready to be jacked in, Neo? Here we go..."
 # folder creation
   pretty_print "Creating folder structure for class..."
           mkdir -p $HOME/documents/TheoWAF/Logs
-          mkdir -p $HOME/documents/TheoWAF/class7.5/GCP/{Terraform,Notes,Homework,Classes,Books,Files}
-          mkdir -p $HOME/documents/TheoWAF/class8
+          mkdir -p $HOME/documents/TheoWAF/class8/SEIR_Foundations/AWS/{Terraform,Notes,Homework,Classes,Books,Files}
+          # mkdir -p $HOME/documents/TheoWAF/class8
           
 
 
@@ -59,10 +59,11 @@ fi
 # Homebrew installs; regular apps
   pretty_print "Installing apps via Homebrew...hold on..."
   	  brew install google-chrome 
+	  brew install --cask firefox
 	  brew install --cask brave-browser
 	  brew install --cask zoom
 	  brew install --cask visual-studio-code
-    	  brew install --cask obsidian
+      brew install --cask obsidian
 
 #	  brew install wireguard
 #	  brew install --cask discord
@@ -83,7 +84,7 @@ fi
 #	  Brew install --cask datadog-agent
 #	  Brew install --cask nessus
 #	  Brew install --cask anaconda 	
-#         brew install --cask sentinel 
+#     brew install --cask sentinel 
 #	  Brew install --cask zap 
 #	  Brew install --cask little-snitch
 
