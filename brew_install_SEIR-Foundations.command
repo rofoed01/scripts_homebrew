@@ -60,6 +60,7 @@ brew install --cask brave-browser
 brew install --cask zoom
 brew install --cask visual-studio-code
 brew install --cask obsidian
+brew install --cask anki 
 
 # brew install wireguard
 # brew install --cask discord
@@ -68,9 +69,12 @@ brew install --cask obsidian
 
 # Homebrew installs; cloud infrastructure
 pretty_print "Installing programming & cloud tools via Homebrew...patience..."
-brew install git gh wget python3 terraform opentofu jq awscli azure-cli  
-brew install --cask google-cloud-sdk  
-brew install --cask anki 
+brew install git gh wget jq 
+brew install python3
+brew install awscli azure-cli opentofu
+brew tap hashicorp/tap && brew install hashicorp/tap/terraform
+brew install --cask google-cloud-sdk  < /dev/null
+
 
 # brew install pytorch ollama libtensorflow go rust
 # brew install terragrunt vsh
