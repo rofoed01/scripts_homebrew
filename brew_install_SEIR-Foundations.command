@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-# This is part of a larger script for setting a Mac for cloud infrastructure work, Python development, and ML/AI work. Thanks to Theo WAF for setting the foundation.
+# This is part of a larger script to set a Mac for cloud infrastructure work, Python development, and ML/AI work. Thanks to Theo WAF for setting the foundation.
 # Source = https://gist.github.com/m1yag1/bb0ffef90bbc40f313844ec92427ac95
+
+# if user interaction is needed user this command
+# bash  <(curl -fsSL https://raw.githubusercontent.com/rofoed01/scripts_homebrew/refs/heads/main/brew_install_SEIR-Foundations.command)
 
 # when set, any errors will stop the script from running
 # set -e
@@ -56,6 +59,8 @@ else
   pretty_print "You already have Homebrew installed...good job!"
 fi
 
+brew update 
+
 # Homebrew installs; quality of life
 pretty_print "Installing core Homebrew utilities...one sec..."
 brew install coreutils findutils bash openssl@3 ca-certificates htop tmux tree
@@ -79,9 +84,20 @@ brew install --cask anki
 pretty_print "Installing programming & cloud tools via Homebrew...patience..."
 brew install git gh wget jq 
 brew install python3
-brew install awscli azure-cli opentofu
+brew install awscli 
+brew install opentofu
+
+
+# Remove Terraform if it was previously installed from Homebrew/core
+if brew list --formula terraform &>/dev/null; then
+  if brew list --formula --full-name | grep -q '^terraform$'; then
+    pretty_print "Removing Terraform from the old Homebrew/core formula..."
+    brew uninstall terraform
+  fi
+fi
+
 brew tap hashicorp/tap && brew install hashicorp/tap/terraform
-brew install --cask google-cloud-sdk < /dev/null
+brew install --cask google-cloud-sdk  < /dev/null
 
 
 # brew install pytorch ollama libtensorflow go rust
@@ -93,7 +109,7 @@ brew install --cask google-cloud-sdk < /dev/null
 # brew install --cask anaconda  
 # brew install --cask sentinel 
 # brew install --cask zap 
-# brew install --cask little-snitch
+# brew install little-snitch
 
 # Homebrew list
 pretty_print "Showing brew list..."
