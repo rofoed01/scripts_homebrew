@@ -13,6 +13,14 @@ pretty_print() {
 
 pretty_print "Ready to be jacked in, Neo? Here we go..."
 
+# Ask for the administrator password upfront
+pretty_print "The computer will ask for your password just in case anything needs it."
+echo ""
+sudo -v
+# Keep-alive: update existing sudo time stamp until the script has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
 # So it begins
 
 # timestamp
@@ -34,7 +42,7 @@ pretty_print "Homebrew installation..."
 
 if ! command -v brew &>/dev/null; then
   pretty_print "Installing Homebrew, an OSX package manager, follow the instructions..." 
-  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"'
   eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -51,7 +59,7 @@ fi
 # Homebrew installs; quality of life
 pretty_print "Installing core Homebrew utilities...one sec..."
 brew install coreutils findutils bash openssl@3 ca-certificates htop tmux tree
-	  
+    
 # Homebrew installs; regular apps
 pretty_print "Installing apps via Homebrew...hold on..."
 brew install google-chrome 
@@ -73,7 +81,7 @@ brew install git gh wget jq
 brew install python3
 brew install awscli azure-cli opentofu
 brew tap hashicorp/tap && brew install hashicorp/tap/terraform
-brew install --cask google-cloud-sdk  < /dev/null
+brew install --cask google-cloud-sdk < /dev/null
 
 
 # brew install pytorch ollama libtensorflow go rust
@@ -82,7 +90,7 @@ brew install --cask google-cloud-sdk  < /dev/null
 # brew install kubernetes-cli kustomize minikube k6 make istioctl k9s helm kubectx prometheus grafana nmap trivy atmos
 # brew install --cask datadog-agent
 # brew install --cask nessus
-# brew install --cask anaconda 	
+# brew install --cask anaconda  
 # brew install --cask sentinel 
 # brew install --cask zap 
 # brew install --cask little-snitch
